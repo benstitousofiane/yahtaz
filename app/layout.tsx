@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "./footer";
 
 export const metadata: Metadata = {
   title: "Yahtaz",
@@ -13,8 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-black">
         {children}
+        <Footer/>
       </body>
     </html>
   );
