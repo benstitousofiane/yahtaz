@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #F8F9FA;
+  --foreground: #212529;
+  --muted: #6C757D;
+  --accent: #1F1F1F;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.text-muted-foreground {
+  color: var(--muted);
+}
+
+/* Ombre subtile pour les cartes */
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Garder la bottom bar comme elle est */
+
