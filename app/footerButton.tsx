@@ -1,5 +1,5 @@
 "use clients"
-import { redirect } from "next/navigation"
+import Link from "next/link"
 import { ReactNode } from "react"
 
 interface FooterButtonInterface{
@@ -12,8 +12,19 @@ interface FooterButtonInterface{
 
 export default function FooterButton(prop : FooterButtonInterface){
     return (
-        <button className={`${prop.focus == prop.id ? "text-white" : "text-neutral-800"} bg-black p-5 rounded-full`} onClick={() => {prop.changeFocus(prop.id); redirect(prop.url)}}>
+        <Link 
+            href={prop.url}
+            className={`
+                relative z-10 transition-all duration-300 ease-in-out p-3
+                ${prop.id === 'home' ? '' : 'hover:text-white/90'}
+                ${prop.focus === prop.id && prop.id !== 'quran'
+                    ? "text-white" 
+                    : prop.id === 'quran' ? "text-[#1F1F1F]" : "text-gray-500"
+                }
+            `} 
+            onClick={() => prop.changeFocus(prop.id)}
+        >
             {prop.icon}
-        </button>
+        </Link>
     )
 }
