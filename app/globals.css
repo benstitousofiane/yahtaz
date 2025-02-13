@@ -25,3 +25,27 @@ body {
 
 /* Garder la bottom bar comme elle est */
 
+@font-face {
+  font-family: Hafs;
+  src: url('../components/quran/hafs/uthmanic_hafs_v20.ttf');
+}
+@font-face {
+  font-family: Warsh;
+  src: url('../components/quran/warsh/uthmanic_warsh_v21.ttf');
+}
+@font-face {
+  font-family: Shubah;
+  src: url('../components/quran/shubah/uthmanic_shuba_v20.ttf');
+}
+@font-face {
+  font-family: Qaloun;
+  src: url('../components/quran/qaloun/uthmanic_qaloun_v21.ttf');
+}
+@font-face {
+  font-family: Duri;
+  src: url('../components/quran/duri/uthmanic_douri_v20.ttf');
+}
+@font-face {
+  font-family: Susi;
+  src: url('../components/quran/susi/uthmanic_sousi_v20.ttf');
+}
